@@ -1,35 +1,30 @@
 # Audari
 
-**Audari** is a curated set of **Agent Skills** for product engineering and
-studio shipping: security, compliance, launch chrome, local-business templates,
-deploy/care, and release discipline.
+Agent skills for shipping software and studio sites — security, compliance,
+launch checklists, local-business templates, deploy and care, and release
+discipline.
 
-Built for [Cursor](https://cursor.com) (and compatible skill hosts). Policy over
-encyclopedias — staged checklists, verify steps, and stop rules so agents don’t
-ship viral Instagram lists as gospel.
+Built for [Cursor](https://cursor.com) and compatible skill hosts. Each skill is
+a short policy with stages, verify steps, and stop rules — not a long checklist
+dumped into chat.
 
-> Not legal advice. Not ASVS/GDPR certification. See [docs/AUTHORITY.md](docs/AUTHORITY.md).
-
-## Name
-
-**Audari** — evidence-first shipping bars for agents (audit / accountability).
-Public GitHub repo: [`audari`](https://github.com/anje-anz/audari). Local
-folder may still be `skills-kit`.
+> Not legal advice. Not ASVS or GDPR certification. See
+> [docs/AUTHORITY.md](docs/AUTHORITY.md).
 
 ## Layout
 
 ```text
-audari/   # or skills-kit/ locally
+audari/
 ├── README.md
-├── LICENSE                 # MIT
+├── LICENSE
 ├── docs/
 │   ├── authoring.md
 │   ├── smoke.md
 │   ├── BRAND.md
-│   ├── AUTHORITY.md        # EDPB / OWASP / NIST / SemVer map
+│   ├── AUTHORITY.md
 │   └── asvs-l1-gap.md
 ├── examples/
-│   └── saas-next-smoke.md  # anonymized worked review
+│   └── saas-next-smoke.md
 ├── scripts/
 │   └── sync-to-cursor.ps1
 └── skills/
@@ -48,33 +43,32 @@ audari/   # or skills-kit/ locally
     └── release-versioning/
 ```
 
-Third-party skills (awwwards, oil-ui, …) stay **outside** this repo — install
-separately after your verify flow.
+Third-party craft skills (awwwards, oil-ui, motion-web, …) are installed
+separately — they are not part of this repo.
 
-## Install (local Cursor)
+## Install
 
 ```powershell
 .\scripts\sync-to-cursor.ps1
 ```
 
-Copies `skills/*` → `%USERPROFILE%\.cursor\skills\<name>\`. Start a **new**
-agent chat so Cursor rediscovers skills.
+Copies `skills/*` into `%USERPROFILE%\.cursor\skills\<name>\`. Start a new
+agent chat so Cursor reloads skills.
 
 ## Use
 
-`/security-checklist`, `/compliance-checklist`, `/vertical-templates`, …
-or natural language matching each skill’s `description`.
+Invoke by name (`/security-checklist`, `/compliance-checklist`, …) or by
+natural language that matches a skill’s `description`.
 
-Smoke method: [docs/smoke.md](docs/smoke.md).
+How we smoke-test skills: [docs/smoke.md](docs/smoke.md).
 
 ## Principles
 
-- Policy skills, not encyclopedias  
-- Defaults + stop rules  
-- Verify on real repos; cite evidence  
-- Defense and craft only — no offensive tooling  
-- This repo is source of truth; `~/.cursor/skills` is a deploy target  
-- No personal client names, private paths, secrets, or fixed studio price lists  
+- Prefer short policies over encyclopedias
+- Defaults, stages, and stop rules
+- Cite evidence from the real repo
+- Defense and craft only — no offensive tooling
+- This repo is the source of truth; `~/.cursor/skills` is the install target
 
 ## License
 

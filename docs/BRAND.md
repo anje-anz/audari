@@ -1,17 +1,15 @@
 # Brand
 
 **Public name:** Audari  
-**Pronunciation:** roughly *ow-DAH-ree* (like vocari)  
-**Sense:** audit / evidence / accountability — agent skills with shipping bars  
-**GitHub:** `anje-anz/audari` (skills kit first; room for a future Audari product)
+**Pronunciation:** roughly *ow-DAH-ree*  
+**Sense:** audit / evidence / accountability  
+**GitHub:** [anje-anz/audari](https://github.com/anje-anz/audari)
 
-**Avoid:** onov/onova (taken / wrong fit), studio or client trade names in the public repo  
+**Tagline:** Agent skills for shipping — checklists with teeth.
 
-**Tagline (optional):** Agent skills for shipping — checklists with teeth.
+**Keep out of the public repo:** real client names, personal paths, private
+emails, live secrets, identifiable smoke targets. Prefer fictional examples
+(`riverside-plumber-lee`, anonymized SaaS).
 
-**Do not put in the public repo:** real client slugs, personal absolute paths,
-private emails, live secrets, or identifiable smoke targets. Prefer fictional
-examples (`riverside-plumber-lee`, `audari-templates`, anonymized SaaS).
-
-**Pricing:** do **not** hard-code studio list prices in skills. Use abstract
-tiers (`base` / `care` / `add-on`); each user fills their own rate card.
+**Pricing:** do not hard-code studio list prices. Use `base` / `care` /
+`add-on`; each studio fills its own rate card.
