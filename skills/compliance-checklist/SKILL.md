@@ -78,19 +78,30 @@ Do **not** add separate third-party “GDPR generator” skills. Prefer saying
 | **first-users** | Retention; breach runbook; marketing consent hygiene; a11y baseline; subprocessors; evidence folder started |
 | **scale** | Counsel review; transfers/DPIA as needed; insurance; store program; AI Act/DSA classification if relevant; buyer/DD ready |
 
+## Stop rules
+
+Core (all Audari skills): shape + stage first · only that stage · evidence or gap ·
+one pass, then stop · owned and read-only · hand off · no certification claims.
+Full text: `docs/CONVENTIONS.md` in the Audari repo. For this skill:
+
+- Done when each stage item is OK with evidence, a gap with an owner, or a counsel handoff.
+- List counsel questions; do not answer them.
+- A policy page existing is not evidence — its content must match the real stack.
+
 ## Output format
 
 ```markdown
 ## Compliance checklist — <shape> / <stage> / <markets>
-### Blockers before public launch
-- **<item>** — obligation · done-when · evidence · owner: you|counsel|vendor
-### Should have soon
+### Blockers
+- **<id> <item>** — obligation · done-when · evidence · owner: you|client|counsel|vendor
+### Should
 - …
 ### Defer
 - … — trigger: …
-### Ask counsel / accountant
-- …
-### Related
+### OK
+- **<id>** — evidence
+### Handoff
+- counsel / accountant — …
 - /security-checklist — …
 - /prod-checklist — …
 ```

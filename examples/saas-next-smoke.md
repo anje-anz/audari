@@ -93,23 +93,23 @@ Observed: health/quality scripts, monitoring cron bearer, Redis for deep queue.
 ```markdown
 ## Smoke — example SaaS / first-users (observational)
 
-### Strengths
+### Blockers
+- **site D3** — og:image → /og.png missing on disk
+- **auth-abuse** — login/signup/reset ungated before Supabase password verify
+
+### Should
+- **site D6–D7** — robots + sitemap for public URLs
+- **site U10** — root `not-found.tsx`
+
+### N/A
+- Full prod 101 / L2 DAI — Vercel PaaS owns that layer
+
+### OK
 - **Compliance** — Privacy/Terms + Stripe MoR + export/delete (evidence: …)
 - **Payments** — webhook signature verify (security P31)
 - **Redirect** — safeInternalPath on login next
 
-### Blockers / high
-- **site D3** — og:image → /og.png missing on disk
-- **auth-abuse** — login/signup/reset ungated before Supabase password verify
-
-### Should soon
-- **site D6–D7** — robots + sitemap for public URLs
-- **site U10** — root `not-found.tsx`
-
-### Defer
-- Full prod 101 / L2 DAI — N/A on Vercel PaaS
-
-### Handoff if fixing
+### Handoff (fix order)
 1. site chrome (og, robots, 404)
 2. auth-abuse gate on `(auth)/login/actions.ts`
 3. compliance evidence register (optional)

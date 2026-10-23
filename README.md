@@ -19,6 +19,7 @@ audari/
 ├── LICENSE
 ├── docs/
 │   ├── authoring.md
+│   ├── CONVENTIONS.md
 │   ├── smoke.md
 │   ├── BRAND.md
 │   ├── AUTHORITY.md
@@ -60,7 +61,13 @@ agent chat so Cursor reloads skills.
 Invoke by name (`/security-checklist`, `/compliance-checklist`, …) or by
 natural language that matches a skill’s `description`.
 
-How we smoke-test skills: [docs/smoke.md](docs/smoke.md).
+Shared stages, severity, evidence, and stop rules:
+[docs/CONVENTIONS.md](docs/CONVENTIONS.md). How we smoke-test skills:
+[docs/smoke.md](docs/smoke.md).
+
+Everything here is free and complete. An optional paid add-on, **Audari Ship
+Gate**, packages a pre-launch SHIP / FIX / HOLD verdict and client report on top
+of these checks; you don't need it to use the kit.
 
 ## Principles
 

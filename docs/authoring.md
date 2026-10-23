@@ -27,6 +27,7 @@ skills/<name>/
 7. Prefer **verify / evidence / not-enough** references over longer viral item lists.
 8. Professional bar = done-when + how to check — not “add item 102 from Instagram”.
 9. When citing external standards, link [AUTHORITY.md](AUTHORITY.md); never claim certification.
+10. Use the stage names, severity headings, and stop-rule block from [CONVENTIONS.md](CONVENTIONS.md). Inline the one-line core in SKILL.md — installed skills can't read `docs/`.
 
 ## After adding
 

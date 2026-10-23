@@ -70,14 +70,24 @@ In-care text/image swap within monthly cap. Out of cap → quote as paid change.
 
 Follow `runbook.md`: confirm down vs DNS vs deploy; restore; notify client with facts only.
 
+## Stop rules
+
+Core (all Audari skills): mode first · evidence or gap · one pass, then stop ·
+owned and read-only · hand off · no certification claims.
+Full text: `docs/CONVENTIONS.md` in the Audari repo. For this skill:
+
+- One mode per pass; done when that mode's checklist and `verify.md` items are ticked.
+- Anything outside the care scope is a quote, not a silent fix.
+- Incidents: restore and report facts; root-cause essays are a second turn.
+
 ## Output format
 
 ```markdown
 ## Deploy/care — <client> / <mode>
-### Done
-- …
-### Blocked
-- … — needs: client|registrar|DNS
+### OK
+- … — evidence
+### Blockers
+- … — owner: client|registrar|you
 ### Care scope reminder
 - Included: …
 - Excluded: …

@@ -25,7 +25,7 @@ Teaching case (anonymized SaaS): see
 1. **Name shape + stage** (don’t invent “scale”).  
 2. **Open only the skills that match** — site / security / compliance / auth / prod lean.  
 3. **Evidence first** — grep, read routes, `curl` headers on owned URLs, file existence.  
-4. **Output** must look like skill output formats: blockers / should / defer / handoff.  
+4. **Output** uses the severity headings in [CONVENTIONS.md](CONVENTIONS.md): blockers / should / defer / N/A / OK / handoff.  
 5. **Teach** — for each gap, cite the **skill item id** (e.g. site `D3`, auth cheap-before-expensive).  
 6. **Do not** exploit, load-test third parties, or dump secrets from `.env`.  
 7. **Fix only if asked** — smoke is diagnosis; patching is a second turn.

@@ -63,19 +63,31 @@ skill for OSI/attack-per-layer content; map those into clusters via by-layer.
 
 Details: [references/by-stage.md](references/by-stage.md).
 
+## Stop rules
+
+Core (all Audari skills): shape + stage first · only that stage · evidence or gap ·
+one pass, then stop · owned and read-only · hand off · no certification claims.
+Full text: `docs/CONVENTIONS.md` in the Audari repo. For this skill:
+
+- Done when the stage's clusters are walked and each hit has risk → fix → verify.
+- `scale` only if the user names it or evidence shows it — never to pad the list.
+- Risk, fix, and check only: no PoCs, payloads, or reproduction steps.
+
 ## Output format
 
 ```markdown
 ## Security checklist — <stage>
-### Critical (ship-blockers)
-- **<item>** — risk: … · fix: … · verify: …
-### Should fix soon
+### Blockers
+- **<id> <item>** — risk: … · fix: … · verify: … · evidence · owner
+### Should
 - …
 ### Defer
-- … — when <trigger>
+- … — trigger: …
 ### N/A
-- … — <why>
-### Follow-ups
+- … — why
+### OK
+- **<id>** — evidence
+### Handoff
 - /auth-abuse-guard — …
 - /prod-checklist — backups/DR overlap
 ```

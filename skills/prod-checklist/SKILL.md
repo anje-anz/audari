@@ -67,17 +67,31 @@ Add: deliberate horizontal scale, cache invalidation strategy, replicas/sharding
 - Alerts on every metric (noise) or none (blind)
 - Multi-region before single-region backups work
 
+## Stop rules
+
+Core (all Audari skills): shape + stage first · only that stage · evidence or gap ·
+one pass, then stop · owned and read-only · hand off · no certification claims.
+Full text: `docs/CONVENTIONS.md` in the Audari repo. For this skill:
+
+- Done when the stage minimum bar is met or each miss has a trigger.
+- Read `lean.md` before proposing anything from a later stage.
+- On PaaS (Vercel, Cloudflare), mark platform-owned items N/A with the platform as evidence.
+
 ## Output format (when reviewing a project)
 
 ```markdown
 ## Prod checklist — <stage>
-### Must fix now
+### Blockers
+- **<id> <item>** — done-when · evidence · owner
+### Should
 - …
-### Defer (with trigger)
-- … — when <condition>
+### Defer
+- … — trigger: …
 ### N/A
-- … — <why>
-### Follow-up skills
+- … — why
+### OK
+- **<id>** — evidence
+### Handoff
 - /auth-abuse-guard — …
 ```
 

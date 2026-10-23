@@ -58,14 +58,28 @@ portfolios, and SaaS marketing pages**.
 | **soft-launch** | + robots/sitemap, OG+favicon, custom 404, analytics behind consent if needed, Privacy/Terms live |
 | **public** | + canonicals, alt text, FAQ if support load, sticky CTA if conversion page, link check, CWV sane |
 
+## Stop rules
+
+Core (all Audari skills): shape + stage first · only that stage · evidence or gap ·
+one pass, then stop · owned and read-only · hand off · no certification claims.
+Full text: `docs/CONVENTIONS.md` in the Audari repo. For this skill:
+
+- Done when the stage gate in `verify.md` passes, or each miss is Defer/Handoff.
+- Check assets **exist** (file on disk, URL 200) — a metadata string is not evidence.
+- No craft or copy polish items; those go to `craft-budget` / `copy-local`.
+
 ## Output format
 
 ```markdown
 ## Site checklist — <shape> / <stage>
 ### Blockers
-- **<item>** — done-when · …
-### Should soon
+- **<id> <item>** — done-when · evidence · owner
+### Should
 - …
+### Defer
+- … — trigger: …
+### OK
+- **<id>** — evidence
 ### Handoff
 - /compliance-checklist — …
 - /craft-budget — …

@@ -17,7 +17,8 @@ disable-model-invocation: true
 
 **Source:** Audari (this repo). Index:
 [references/full-list.md](references/full-list.md). Stages:
-[references/by-stage.md](references/by-stage.md). Viral map:
+[references/by-stage.md](references/by-stage.md). **Verify / submit gate:**
+[references/verify.md](references/verify.md). Viral map:
 [references/viral-app-store-20.md](references/viral-app-store-20.md).
 
 ## Handoffs
@@ -46,14 +47,26 @@ disable-model-invocation: true
 | $ | Money | Sandbox IAP, clear price/period, no dark-pattern paywall |
 | P | Platform policy | No thin web wrapper, permission purpose strings, SDK privacy manifests |
 
+## Stop rules
+
+Core (all Audari skills): shape + stage first · only that stage · evidence or gap ·
+one pass, then stop · owned and read-only · hand off · no certification claims.
+Full text: `docs/CONVENTIONS.md` in the Audari repo. For this skill:
+
+- Done when the submit gate in `verify.md` passes for the chosen store(s).
+- Evidence is a build number, console panel, recording, or file in the archive — not intent.
+- Never write store copy for features the binary doesn't ship.
+
 ## Output format
 
 ```markdown
 ## Store checklist — <ios|android|both> / <stage>
 ### Blockers (rejection-likely)
-- **<id>** — done-when · evidence
-### Should before submit
+- **<id>** — done-when · evidence · owner
+### Should
 - …
+### OK
+- **<id>** — evidence
 ### Handoff
 - /compliance-checklist — …
 ```
