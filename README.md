@@ -65,9 +65,10 @@ Shared stages, severity, evidence, and stop rules:
 [docs/CONVENTIONS.md](docs/CONVENTIONS.md). How we smoke-test skills:
 [docs/smoke.md](docs/smoke.md).
 
-Everything here is free and complete. An optional paid add-on, **Audari Ship
-Gate**, packages a pre-launch SHIP / FIX / HOLD verdict and client report on top
-of these checks; you don't need it to use the kit.
+Everything here is free and complete. An optional paid add-on, **[Audari ship
+gate](https://www.agensi.io/skills/audari-ship-gate)**, packages a pre-launch
+SHIP / FIX / HOLD verdict and client report on top of these checks; you don't
+need it to use the kit.
 
 ## Principles
 
